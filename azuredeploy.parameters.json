@@ -6,66 +6,66 @@
 			"value": "https://raw.githubusercontent.com/Microsoft/openshift-container-platform/master"
 		},
 		"masterVmSize": {
-			"value": "Standard_E2s_v3"
+			"value": "Standard_D4s_v3"
 		},
 		"infraVmSize": {
 			"value": "Standard_D4s_v3"
 		},
 		"nodeVmSize": {
-			"value": "Standard_D4s_v3"
+			"value": "Standard_E8s_v3"
 		},
 		"cnsVmSize": {
-			"value": "Standard_E4s_v3"
+			"value": "Standard_E8s_v3"
 		},
 		"osImageType": {
-			"value": "defaultgallery"
+			"value": "marketplace"
 		},
 		"marketplaceOsImage": {
 			"value": {
-				"publisher": "RedHat",
-				"offer": "RHEL",
-				"sku": "7-RAW",
+				"publisher": "redhat",
+				"offer": "rhel-byos",
+				"sku": "rhel-76",
 				"version": "latest"
 			}
 		},
 		"storageKind": {
-			"value": "changeme"
+			"value": "managed"
 		},
 		"openshiftClusterPrefix": {
-			"value": "changeme"
+			"value": "rbsaopenshift"
 		},
 		"minorVersion": {
-			"value": "69"
+			"value": "129"
 		},
 		"masterInstanceCount": {
 			"value": 3
 		},
 		"infraInstanceCount": {
-			"value": 3
+			"value": 4
 		},
 		"nodeInstanceCount": {
-			"value": 3
+			"value": 6
 		},
 		"cnsInstanceCount": {
 			"value": 3
 		},
 		"dataDiskSize": {
-			"value": 128
+			"value": 256
 		},
 		"cnsGlusterDiskSize": {
-			"value": 128
+			"value": 512
 		},
 		"adminUsername": {
-			"value": "changeme"
+			"value": "rbsocpadmin"
 		},
 		"enableMetrics": {
-			"value": "false"
+			"value": "true"
 		},
 		"enableLogging": {
-			"value": "false"
+			"value": "true"
 		},
 		"enableCNS": {
-			"value": "false"
+			"value": "true"
 		},
 		"rhsmUsernameOrOrgId": {
 			"value": "changeme"
@@ -95,43 +95,43 @@
 			"value": "changeme"
 		},
 		"domainName": {
-			"value": "contoso.com"
+			"value": "aholddelhaize.com"
 		},
 		"masterClusterDnsType": {
-			"value": "default"
+			"value": "custom"
 		},
 		"masterClusterDns": {
-			"value": "console.contoso.com"
+			"value": "console.aholddelhaize.com"
 		},
 		"routingSubDomainType": {
-			"value": "nipio"
+			"value": "custom"
 		},
 		"routingSubDomain": {
-			"value": "apps.contoso.com"
+			"value": "apps.aholddelhaize.com"
 		},
 		"virtualNetworkNewOrExisting": {
 			"value": "new"
 		},
 		"virtualNetworkName": {
-			"value": "changeme"
+			"value": "ocpvnet"
 		},
 		"addressPrefixes": {
 			"value": "10.0.0.0/14"
 		},
 		"masterSubnetName": {
-			"value": "changeme"
+			"value": "mastersubnet"
 		},
 		"masterSubnetPrefix": {
 			"value": "10.1.0.0/16"
 		},
 		"infraSubnetName": {
-			"value": "changeme"
+			"value": "infrasubnet"
 		},
 		"infraSubnetPrefix": {
 			"value": "10.2.0.0/16"
 		},
 		"nodeSubnetName": {
-			"value": "changeme"
+			"value": "appsubnet"
 		},
 		"nodeSubnetPrefix": {
 			"value": "10.3.0.0/16"
@@ -149,13 +149,13 @@
 			"value": "/subscriptions/abc686f6-963b-4e64-bff4-99dc369ab1cd/resourceGroups/vnetresourcegroup/providers/Microsoft.Network/virtualNetworks/openshiftvnet/subnets/nodesubnet"
 		},
 		"masterClusterType": {
-			"value": "public"
+			"value": "private"
 		},
 		"masterPrivateClusterIp": {
 			"value": "10.1.0.200"
 		},
 		"routerClusterType": {
-			"value": "public"
+			"value": "private"
 		},
 		"routerPrivateClusterIp": {
 			"value": "10.2.0.200"
